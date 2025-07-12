@@ -1,0 +1,43 @@
+<Page
+    x:Class="MainUi.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MainUi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel
+        Orientation="Horizontal">
+        <Button
+            x:Name="TestBtn"
+            Content="GetBool"
+            Click="TestBtn_Click"
+            />
+        <Grid
+            Width="400"
+            Height="500"
+            BorderBrush="Red"
+            BorderThickness="3"
+            Margin="20">
+            <WebView
+                Width="400"
+                Height="500"
+                x:Name="ui_good_wv"
+                Source="https://notice.penup.com/1737598077574430_en/eng/eng.html" />
+        </Grid>
+        <Grid
+            Width="400"
+            Height="500"
+            BorderBrush="Red"
+            BorderThickness="3">
+            <WebView
+                Width="400"
+                Height="500"
+                x:Name="ui_ng_wv"
+                Source="https://notice.penup.com/1707876679600090_en/eng/eng.html" />
+        </Grid>
+        
+    </StackPanel>
+</Page>
